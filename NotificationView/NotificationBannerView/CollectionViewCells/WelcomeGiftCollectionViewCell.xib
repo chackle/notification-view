@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="WelcomeGiftCollectionViewCell" id="gTV-IL-0wX" customClass="WelcomeGiftCollectionViewCell" customModule="NotificationView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="431" height="121"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="431" height="121"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jmw-nm-clw">
+                        <rect key="frame" x="0.0" y="20" width="431" height="101"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1js-fV-A5q">
+                                <rect key="frame" x="16" y="8" width="85" height="85"/>
+                                <color key="backgroundColor" red="0.3294117647" green="0.3294117647" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="1js-fV-A5q" secondAttribute="height" multiplier="1:1" id="lY0-k9-eqn"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="Quest Complete!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H66-VG-GWo">
+                                <rect key="frame" x="109" y="8" width="306" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Congratulations, you just finished your first quest!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hiE-bv-gpV">
+                                <rect key="frame" x="109" y="30" width="306" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="hiE-bv-gpV" secondAttribute="trailing" constant="16" id="3Lf-CJ-idV"/>
+                            <constraint firstItem="H66-VG-GWo" firstAttribute="top" secondItem="Jmw-nm-clw" secondAttribute="top" constant="8" id="3tM-ha-krL"/>
+                            <constraint firstItem="H66-VG-GWo" firstAttribute="leading" secondItem="1js-fV-A5q" secondAttribute="trailing" constant="8" id="9le-IG-ENR"/>
+                            <constraint firstItem="1js-fV-A5q" firstAttribute="top" secondItem="Jmw-nm-clw" secondAttribute="top" constant="8" id="Gpq-Hq-EiG"/>
+                            <constraint firstItem="hiE-bv-gpV" firstAttribute="top" secondItem="H66-VG-GWo" secondAttribute="bottom" constant="4" id="MBA-Dx-afH"/>
+                            <constraint firstAttribute="trailing" secondItem="H66-VG-GWo" secondAttribute="trailing" constant="16" id="OaB-R6-AY2"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="hiE-bv-gpV" secondAttribute="bottom" constant="8" id="aTp-ko-9yh"/>
+                            <constraint firstItem="hiE-bv-gpV" firstAttribute="leading" secondItem="1js-fV-A5q" secondAttribute="trailing" constant="8" id="daq-DJ-6ql"/>
+                            <constraint firstItem="1js-fV-A5q" firstAttribute="leading" secondItem="Jmw-nm-clw" secondAttribute="leading" constant="16" id="oY6-Ht-e0l"/>
+                            <constraint firstAttribute="bottom" secondItem="1js-fV-A5q" secondAttribute="bottom" constant="8" id="qtm-oR-aHf"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Jmw-nm-clw" secondAttribute="trailing" id="I2X-4E-K9w"/>
+                <constraint firstItem="Jmw-nm-clw" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="20" id="TWZ-5J-XOM"/>
+                <constraint firstItem="Jmw-nm-clw" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="gb0-a4-BcT"/>
+                <constraint firstAttribute="bottom" secondItem="Jmw-nm-clw" secondAttribute="bottom" id="uqk-hF-ENf"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="431" height="121"/>
+            <connections>
+                <outlet property="containerView" destination="Jmw-nm-clw" id="0Gr-fA-0HM"/>
+                <outlet property="descriptionLabel" destination="hiE-bv-gpV" id="KnO-Wt-fnm"/>
+                <outlet property="leftImageView" destination="1js-fV-A5q" id="A5k-FI-zyk"/>
+                <outlet property="titleLabel" destination="H66-VG-GWo" id="OSs-vq-447"/>
+            </connections>
+            <point key="canvasLocation" x="116" y="100.29985007496252"/>
+        </collectionViewCell>
+    </objects>
+</document>
